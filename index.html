@@ -11,7 +11,7 @@
     rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.min.css">
 
 </head>
 
@@ -276,10 +276,10 @@
         </div>
         <form action="-" class="footer-form">
             <div class="footer-form-field">
-                <label for="mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+                <label class="footer-form__label" for="mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
                 <div class="mail-field-button">
-                    <input type="email" name="mail" placeholder="E-mail" autofocus>
-                    <button type="submit">Подписаться<svg width="24" height="24" class="send-icon">
+                    <input class="footer-form__input" type="email" name="mail" placeholder="E-mail" autofocus>
+                    <button class="footer-form__button" type="submit">Подписаться<svg width="24" height="24" class="send-icon">
                             <use href="./images/symbol-defs6.svg#icon-send"></use>
                         </svg></button>
         
@@ -295,53 +295,53 @@
     <div  class="backdrop is-hidden" data-modal>
 
         <div class="modal">
-            <button data-modal-close class="hide-button"><svg width="18" height="18"><use href="./images/symbol-defs5.svg#icon-close-black"></use></svg> </button>
+            <button data-modal-close class="modal__hide-button"><svg width="18" height="18"><use href="./images/symbol-defs5.svg#icon-close-black"></use></svg> </button>
             <div class="modal-form">
-            <p>Оставьте свои данные, мы вам перезвоним</p>
+            <p class="modal-form__paragraph">Оставьте свои данные, мы вам перезвоним</p>
             <form action="-" class="js-speaker-form">
                 <ul class="form-list list">
-                    <li>
-                        <label for="name" class="name">Имя</label>
+                    <li class="form-list__item">
+                        <label  for="name" class="form-list__label">Имя</label>
                         <div class="icon-container">
-                        <input type="text" name="name" id="name">
-                        <span class="modal-icon"><svg width="12" height="12"><use href="./images/symbol-defs6.svg#icon-person-modal"></use></svg></span>
+                        <input class="form-list__input" type="text" name="name" id="name">
+                        <span class="form-list__icon"><svg width="12" height="12"><use href="./images/symbol-defs6.svg#icon-person-modal"></use></svg></span>
                         </div>
 
                     </li>
-                    <li>
-                        <label for="tel" class="tel">Телефон</label>
+                    <li class="form-list__item">
+                        <label for="tel" class="form-list__label">Телефон</label>
                         <div class="icon-container">
-                        <input type="tel" name="tel" id="tel" class="icon-input">
-                        <span class="modal-icon" ><svg width="13" height="13" >
+                        <input type="tel" name="tel" id="tel"  class="form-list__input">
+                        <span class="form-list__icon" ><svg width="13" height="13" >
                                 <use href="./images/symbol-defs6.svg#icon-phone-modal"></use>
                             </svg></span>
                         </div>
                     </li>
-                    <li>
-                        <label for="mail" class="mail">Почта</label>
+                    <li class="form-list__item">
+                        <label for="mail" class="form-list__label">Почта</label>
                         <div class="icon-container">
-                         <input type="email" name="mail" id="mail">
-                        <span class="modal-icon"><svg width="15" height="12" >
+                         <input type="email" name="mail" id="mail"  class="form-list__input">
+                        <span class="form-list__icon"><svg width="15" height="12" >
                                 <use href="./images/symbol-defs6.svg#icon-envelope-modal"></use>
                             </svg></span>
                         </div>
                     </li>
-                    <li>
-                        <label for="comment">Комментарий</label>
-                         <textarea name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
+                    <li class="form-list__item">
+                        <label for="comment" class="form-list__label">Комментарий</label>
+                         <textarea class="form-list__textarea" name="comment" id="comment"  rows="10" placeholder="Введите текст"></textarea>
                     </li>
                     </ul>
                     <div class="policy">
                        
                         
-                           <label for="policy">
-                            <input class="checkbox" type="checkbox" name="policy" id="policy">
-                            <span class="checkbox-icon"></span>
-                              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                           <label for="policy" class="policy__label">
+                            <input class="policy__input" type="checkbox" name="policy" id="policy">
+                            <span class="policy__icon"></span>
+                              Соглашаюсь с рассылкой и принимаю <a class="policy__link" href="">Условия договора</a>
                             </label>
                      </div>
 
-                    <button type="submit">Отправить</button>
+                    <button class="modal__button"  type="submit">Отправить</button>
                
             </form>
             </div>

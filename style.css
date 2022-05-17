@@ -695,7 +695,7 @@ img {
   flex-direction: column;
 }
 
-.footer-form label {
+.footer-form__label {
   color: var(--main-background-color);
   font-weight: 700;
   font-size: 14px;
@@ -704,7 +704,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-form input {
+.footer-form__input {
   width: 358px;
   background-color: var(--hero-footer-background-color);
   padding-top: 15px;
@@ -715,7 +715,7 @@ img {
   color: var(--main-background-color);
 }
 
-.footer-form input::placeholder {
+.footer-form__input::placeholder {
   color: var(--contacts-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -727,7 +727,7 @@ img {
   display: flex;
 }
 
-.mail-field-button button {
+.footer-form__button {
   cursor: pointer;
   min-width: 200px;
   min-height: 50px;
@@ -747,8 +747,9 @@ img {
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mail-field-button button:focus,
-.mail-field-button button:hover {
+
+.footer-form__button:focus,
+.footer-form__button:hover {
   background-color: var(--button-hover);
 }
 .send-icon {
@@ -827,7 +828,7 @@ img {
 .modal-form {
   padding: 40px 40px;
 }
-.modal-form p {
+.modal-form__paragraph {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 20px;
@@ -836,13 +837,13 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-.form-list li {
+.form-list__item {
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
 
-.form-list label {
+.form-list__label {
   color: var(--primary-text-color);
   font-style: normal;
   font-weight: 400;
@@ -852,7 +853,7 @@ img {
   margin-bottom: 4px;
 }
 
-.form-list input {
+.form-list__input {
   min-width: 448px;
   min-height: 40px;
   padding-top: 12px;
@@ -871,7 +872,7 @@ img {
   justify-content: center;
 }
 
-.modal-icon {
+.form-list__icon {
   cursor: default;
   fill: var(--title-text-color);
   position: absolute;
@@ -883,22 +884,22 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-container input:focus ~ .modal-icon {
+.form-list__input:focus ~ .form-list__icon {
   fill: var(--accent-color);
 }
 
-.form-list input:hover,
-input:focus {
+.form-list__input:hover,
+.form-list__input:focus {
   cursor: pointer;
   border-color: var(--accent-color);
 }
 
-.form-list input:hover,
-input:focus .modal-icon {
+.form-list__input:hover,
+.form-list__input:focus .modal-icon {
   fill: var(--accent-color);
 }
 
-.form-list textarea {
+.form-list__textarea {
   resize: none;
   min-width: 448px;
   height: 120px;
@@ -908,12 +909,12 @@ input:focus .modal-icon {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-list textarea:hover,
-.form-list textarea:focus {
+.form-list__textarea:hover,
+.form-list__textarea:focus {
   border-color: var(--accent-color);
   cursor: pointer;
 }
-textarea::placeholder {
+.form-list__textarea::placeholder {
   color: var(--placeholder-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -921,7 +922,7 @@ textarea::placeholder {
   letter-spacing: 0.01em;
 }
 
-.form-list li + li {
+.form-list__item + .form-list__item {
   margin-top: 10px;
 }
 
@@ -932,7 +933,7 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
 }
-.policy input {
+.policy__input {
   cursor: pointer;
   position: absolute;
 
@@ -941,7 +942,7 @@ textarea::placeholder {
   appearance: none;
 }
 
-.policy label {
+.policy__label {
   position: relative;
   display: block;
   color: var(--primary-text-color);
@@ -952,7 +953,7 @@ textarea::placeholder {
   padding-left: 24px;
 }
 
-.checkbox-icon {
+.policy__icon {
   background-image: url(images/pre-checked-icon-last.svg);
   width: 16px;
   height: 15px;
@@ -965,16 +966,16 @@ textarea::placeholder {
 }
 
 /* * checked */
-.policy input:checked + .checkbox-icon {
+.policy__input:checked + .checkbox-icon {
   background-image: url(images/icon\ check_right.svg);
   background-color: var(--accent-color);
 }
 
-.policy a {
+.policy__link {
   color: var(--accent-color);
 }
 
-.js-speaker-form button {
+.modal__button {
   cursor: pointer;
   margin-top: 30px;
   width: 200px;
@@ -995,6 +996,6 @@ textarea::placeholder {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.js-speaker-form button:hover {
+.modal__button:hover {
   background-color: var(--button-hover);
 }
