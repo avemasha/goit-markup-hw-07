@@ -3,7 +3,7 @@
   align-items: center;
 }
 .contacts-list__link {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
@@ -18,15 +18,15 @@
   padding-bottom: 32px;
 }
 .contacts-list__link:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .icon-contact {
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
 }
 
 .contacts-list__item:hover .icon-contact {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .contacts-list__item {

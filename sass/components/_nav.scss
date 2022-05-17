@@ -15,7 +15,7 @@
   bottom: 0;
   height: 4px;
   border-radius: 2px;
-  background: var(--accent-color);
+  background: $accent-color;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -51,7 +51,7 @@
 
 .nav-list__link,
 .section__title {
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 .nav-list__link {
   font-family: "Roboto", sans-serif;
@@ -68,5 +68,5 @@
 .nav-list__link:hover,
 .nav-list__link:focus,
 .nav-list__link.current {
-  color: var(--accent-color);
+  color: $accent-color;
 }

@@ -1,9 +1,9 @@
 .our-team {
-  background-color: var(--staff-background-color);
+  background-color: $staff-background-color;
 }
 
 .members__card {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -27,7 +27,7 @@
   text-align: center;
 }
 .members__name {
-  color: var(--title-text-color);
+  color: $title-text-color;
   font-weight: 500;
 
   font-size: 16px;
@@ -39,7 +39,7 @@
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   margin-top: 10px;
 }
 .member-source {
@@ -55,7 +55,7 @@
   display: block;
   width: 44px;
   height: 44px;
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -65,14 +65,14 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-source__icon {
-  fill: var(--icon-color);
+  fill: $icon-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member-source__item:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 .member-source__item:hover .member-source__icon {
-  fill: var(--main-background-color);
+  fill: $main-background-color;
 }

@@ -1,5 +1,5 @@
 .logo {
-  color: var(--logo-web-color);
+  color: $logo-web-color;
   font-family: "Raleway";
   padding-top: 24px;
   padding-bottom: 25px;
@@ -9,9 +9,9 @@
   margin-right: 93px;
 }
 .logo__web {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer__logo-studio {
-  color: var(--main-background-color);
+  color: $main-background-color;
 }

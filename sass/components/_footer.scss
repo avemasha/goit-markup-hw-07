@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--hero-footer-background-color);
+  background-color: $hero-footer-background-color;
 
   padding-top: 60px;
 
@@ -11,7 +11,7 @@
 }
 
 .adress-list__map {
-  color: var(--main-background-color);
+  color: $main-background-color;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -29,11 +29,11 @@
 }
 
 .adress-list__contact:hover {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .join-container__title {
-  color: var(--main-background-color);
+  color: $main-background-color;
   font-size: 14px;
   font-weight: 700;
   font-size: 14px;
@@ -49,13 +49,13 @@
 }
 
 .member-source__icon__footer {
-  fill: var(--main-background-color);
+  fill: $main-background-color;
 }
 .member-source__item__footer:hover {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 .member-source__item__footer:hover .member-source__icon__footer {
-  fill: var(--main-background-color);
+  fill: $main-background-color;
 }
 .footer__member-source {
   display: flex;

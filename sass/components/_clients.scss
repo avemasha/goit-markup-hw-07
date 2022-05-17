@@ -1,5 +1,5 @@
 .clients {
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
 }
 .clients-list {
   display: flex;
@@ -23,14 +23,14 @@
 }
 
 .clients-list__icon {
-  fill: var(--icon-color);
+  fill: $icon-color;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list__item:hover {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 .clients-list__item:hover .clients-list__icon {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }

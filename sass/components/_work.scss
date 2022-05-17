@@ -8,7 +8,7 @@
   left: 215px;
   top: 1061px;
 }
-.work-list li + li {
+.work-list__item + .work-list__item {
   margin-left: 30px;
 }
 
@@ -22,13 +22,13 @@
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: var(--image-overlay);
+  background-color: $image-overlay;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .work-list__overlay-paragraph {
-  color: var(--main-background-color);
+  color: $main-background-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
