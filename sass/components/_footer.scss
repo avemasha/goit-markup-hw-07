@@ -26,10 +26,14 @@
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
-.adress-list__contact:hover {
-  color: $accent-color;
+.join-container {
+  margin-left: 70px;
 }
 
 .join-container__title {
@@ -50,15 +54,26 @@
 
 .member-source__icon__footer {
   fill: $main-background-color;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:hover .member-source__icon__footer {
+    fill: $main-background-color;
+  }
 }
-.member-source__item__footer:hover {
-  background-color: $accent-color;
-}
-.member-source__item__footer:hover .member-source__icon__footer {
-  fill: $main-background-color;
-}
+
 .footer__member-source {
   display: flex;
 
   margin-top: 16px;
+}
+
+.adress-list {
+  margin-top: 20px;
+}
+
+.adress-list__item + .adress-list__item {
+  margin-top: 9px;
 }

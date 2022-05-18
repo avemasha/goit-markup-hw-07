@@ -16,22 +16,23 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
   padding-bottom: 32px;
-}
-.contacts-list__link:hover {
-  color: $accent-color;
+
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .icon-contact {
   fill: $primary-text-color;
 }
 
-.contacts-list__item:hover .icon-contact {
-  fill: $accent-color;
-}
-
 .contacts-list__item {
   display: flex;
   align-items: center;
+
+  &:hover .icon-contact {
+    fill: $accent-color;
+  }
 }
 
 .icon-contact {
